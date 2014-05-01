@@ -17,7 +17,12 @@ var PlayerView = Backbone.View.extend({
 
   setSong: function(song){
     this.model = song;
-    this.setSongTitle(song);
+    console.log('currentsong', song);
+    if (song) {
+      this.setSongTitle(song);
+    } else {
+      $('#songInfo').html('');
+    }
     this.render();
   },
 

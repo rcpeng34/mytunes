@@ -20,4 +20,9 @@ var songData = [
     title: "If Your Girl Only Knew",
     artist: "Aaliyah",
   },
+  {
+    url: "http://www24.zippyshare.com/d/51259239/76796/01%20Call%20Me%20Maybe.mp3",
+    title: "Call Me Maybe",
+    artist: "Carly Rae Jepson",
+  }
 ];
