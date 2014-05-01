@@ -12,7 +12,6 @@ var PlayerView = Backbone.View.extend({
   events: {
     'ended': function (){
       this.model.dequeue();
-
     }
   },
 
@@ -22,7 +21,7 @@ var PlayerView = Backbone.View.extend({
   },
 
   render: function(){
-    return this.$el.attr('src', this.model ? this.model.get('url') : '').append('<div>'+'my name'+'</div>');
+    return this.$el.attr('src', this.model ? this.model.get('url') : '');
   }
 
 });
