@@ -17,11 +17,17 @@ var PlayerView = Backbone.View.extend({
 
   setSong: function(song){
     this.model = song;
+    this.setSongTitle(song);
     this.render();
   },
 
+  setSongTitle: function(song){
+    var songinfo = song.get('artist') + ' | ' + song.get('title');
+    $("#songInfo").html(songinfo);
+  },
+
   render: function(){
-    return this.$el.attr('src', this.model ? this.model.get('url') : '');
+    return this.$el.attr('src',   this.model ? this.model.get('url') : '');
   }
 
 });

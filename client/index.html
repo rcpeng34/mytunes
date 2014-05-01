@@ -21,6 +21,10 @@
     <script src="views/SongQueueView.js"></script>
     <script src="views/SongQueueEntryView.js"></script>
 
+    <div id="songInfo"></div>
+
+    <div id="app"></div>
+
     <script>
       $(function(){
         // set up model objects
@@ -31,7 +35,7 @@
         var appView = new AppView({model: app});
 
         // put the view onto the screen
-        $('body').append(appView.render());
+        $('#app').append(appView.render());
       });
     </script>
   </body>
